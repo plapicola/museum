@@ -1,0 +1,6 @@
+require 'pry'
+require 'minitest/autorun'
+require 'minitest/pride'
+require_relative '../lib/patron'
+require_relative '../lib/exhibit'
+require_relative '../lib/museum'
