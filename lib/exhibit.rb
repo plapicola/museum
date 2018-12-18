@@ -14,5 +14,4 @@ class Exhibit
     @patrons << patron
   end
 
-
 end

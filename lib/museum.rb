@@ -38,6 +38,7 @@ class Museum
     end
     possible_exhibits.reverse
   end
+  
   def reccomend_exhibits(patron)
     @exhibits.find_all do |exhibit|
       patron.interests.include?(exhibit.name)

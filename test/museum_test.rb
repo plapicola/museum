@@ -8,6 +8,7 @@ class MuseumTest < Minitest::Test
     @dead_sea_scrolls = Exhibit.new("Dead Sea Scrolls", 10)
     @imax = Exhibit.new("IMAX", 15)
   end
+  
   def test_it_exists
     assert_instance_of Museum, @dmns
   end
@@ -90,7 +91,7 @@ class MuseumTest < Minitest::Test
     tj = Patron.new("TJ", 7)
     tj.add_interest("IMAX")
     tj.add_interest("Dead Sea Scrolls")
-    bob = Patron.new("Bob", 10)    
+    bob = Patron.new("Bob", 10)
     bob.add_interest("Dead Sea Scrolls")
     bob.add_interest("IMAX")
     sally = Patron.new("Sally", 20)
